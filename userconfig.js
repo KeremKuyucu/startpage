@@ -114,13 +114,11 @@ const default_configuration = {
             {
               name: "Selcukflix",
               url: "https://selcukflix.com",
-              icon_url: "https://selcukflix.com/assets/favicon/favicon.ico?v=4",
               icon_color: palette.peach,
             },
             {
               name: "HDFilmCehennemi",
-              url: "https://hdfilmcehennemi.nl",
-              icon: "film",
+              url: "https://hdfilmcehennemi.com",
               icon_color: palette.mauve,
             },
           ],
