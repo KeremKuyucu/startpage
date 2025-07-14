@@ -28,8 +28,12 @@ const default_configuration = {
   search: {
     engines: {
       p: ["https://www.perplexity.ai/search/?q=", "PerplexityAI"],
+      b: ["https://search.brave.com/search?q=", "Brave Search"],
       d: ["https://duckduckgo.com/?q=", "DuckDuckGo"],
+      yt: ["https://www.youtube.com/results?search_query=", "YouTube"],
       g: ["https://google.com/search?q=", "Google"],
+      gh: ["https://github.com/search?q=", "GitHub"],
+      w: ["https://en.wikipedia.org/wiki/Special:Search?search=", "Wikipedia"],
     },
     default: "d",
   },
@@ -47,19 +51,25 @@ const default_configuration = {
       background_url: "src/img/banners/banner_09.gif",
       categories: [
         {
-          name: "bookmarks",
+          name: "AI",
           links: [
             {
-              name: "raindrop",
-              url: "https://app.raindrop.io",
-              icon: "droplet-bolt",
+              name: "ChatGPT",
+              url: "https://chat.openai.com",
+              icon: "brain",
               icon_color: palette.green,
             },
             {
-              name: "musicForProgramming();",
-              url: "https://musicforprogramming.net",
-              icon: "binary-tree",
-              icon_color: palette.peach,
+              name: "Duck.ai",
+              url: "https://duck.ai",
+              icon: "duck",
+              icon_color: palette.mauve,
+            },
+            {
+              name: "AI Studio",
+              url: "https://aistudio.google.com",
+              icon: "cpu",
+              icon_color: palette.red,
             },
           ],
         },
@@ -73,60 +83,48 @@ const default_configuration = {
               icon_color: palette.green,
             },
             {
-              name: "calendar",
-              url: "https://calendar.google.com",
-              icon: "calendar-filled",
-              icon_color: palette.peach,
-            },
-            {
-              name: "sheets",
-              url: "https://docs.google.com/spreadsheets",
-              icon: "table",
-              icon_color: palette.red,
-            },
-            {
               name: "drive",
               url: "https://drive.google.com/drive/home",
               icon: "brand-google-drive",
               icon_color: palette.blue,
             },
-          ],
-        },
-        {
-          name: "media",
-          links: [
             {
-              name: "уп",
-              url: "https://www.pravda.com.ua",
-              icon: "news",
-              icon_color: palette.green,
-            },
-            {
-              name: "mil.in.ua",
-              url: "https://mil.in.ua",
-              icon: "badge-filled",
-              icon_color: palette.peach,
-            },
-            {
-              name: "куток",
-              url: "https://kutok.io",
-              icon: "border-radius",
-              icon_color: palette.red,
-            },
-            {
-              name: "ґрунт",
-              url: "https://grnt.media",
-              icon: "eye-bolt",
-              icon_color: palette.blue,
-            },
-            {
-              name: "village",
-              url: "https://www.village.com.ua",
-              icon: "home-2",
+              name: "notion",
+              url: "https://notion.so",
+              icon: "book-open",
               icon_color: palette.mauve,
             },
           ],
         },
+       {
+          name: "media",
+          links: [
+            {
+              name: "YouTube",
+              url: "https://www.youtube.com",
+              icon: "brand-youtube",
+              icon_color: palette.red,
+            },
+            {
+              name: "Prime Video",
+              url: "https://www.primevideo.com",
+              icon: "brand-amazon",
+              icon_color: palette.blue,
+            },
+            {
+              name: "Selcukflix",
+              url: "https://selcukflix.com",
+              icon: "film",
+              icon_color: palette.peach,
+            },
+            {
+              name: "HDFilmCehennemi",
+              url: "https://hdfilmcehennemi.nl",
+              icon: "film",
+              icon_color: palette.mauve,
+            },
+          ],
+        }
       ],
     },
     {
@@ -143,166 +141,44 @@ const default_configuration = {
               icon_color: palette.green,
             },
             {
-              name: "neptune",
-              url: "https://ui.neptune.ai",
-              icon: "circle-triangle",
-              icon_color: palette.peach,
+              name: "vercel",
+              url: "https://vercel.com",
+              icon: "brand-vercel",
+              icon_color: palette.black, 
             },
             {
-              name: "stackoverflow",
-              url: "https://stackoverflow.com",
-              icon: "brand-stackoverflow",
-              icon_color: palette.red,
-            },
-          ],
-        },
-        {
-          name: "challenges",
-          links: [
-            {
-              name: "kaggle",
-              url: "https://www.kaggle.com",
-              icon: "brain",
-              icon_color: palette.green,
+              name: "firebase",
+              url: "https://firebase.google.com",
+              icon: "brand-google",
+              icon_color: palette.orange,
             },
             {
-              name: "leetcode",
-              url: "https://leetcode.com",
-              icon: "code-plus",
-              icon_color: palette.peach,
-            },
-            {
-              name: "exercism",
-              url: "https://exercism.org",
-              icon: "code-minus",
-              icon_color: palette.red,
-            },
-            {
-              name: "aoc",
-              url: "https://adventofcode.com",
-              icon: "brand-linktree",
+              name: "cloudflare",
+              url: "https://cloudflare.com",
+              icon: "cloud",
               icon_color: palette.blue,
             },
           ],
         },
-        {
-          name: "resources",
+       {
+          name: "tools",
           links: [
             {
-              name: "dou",
-              url: "https://dou.ua",
-              icon: "brand-prisma",
-              icon_color: palette.green,
-            },
-            {
-              name: "hackernews",
-              url: "https://news.ycombinator.com",
-              icon: "brand-redhat",
-              icon_color: palette.peach,
-            },
-            {
-              name: "uber engineering",
-              url: "https://www.uber.com/en-GB/blog/london/engineering",
-              icon: "brand-uber",
-              icon_color: palette.red,
-            },
-            {
-              name: "netflix tech blog",
-              url: "https://netflixtechblog.com",
-              icon: "brand-netflix",
+              name: "Google Çeviri",
+              url: "https://translate.google.com",
+              icon: "brand-translate",
               icon_color: palette.blue,
             },
+            {
+              name: "DeepL",
+              url: "https://www.deepl.com/translator",
+              icon: "translate",
+              icon_color: palette.peach,
+            },
           ],
-        },
+        }
       ],
-    },
-    {
-      name: "chi ll",
-      background_url: "src/img/banners/banner_08.gif",
-      categories: [
-        {
-          name: "social media",
-          links: [
-            {
-              name: "telegram",
-              url: "https://web.telegram.org",
-              icon: "brand-telegram",
-              icon_color: palette.green,
-            },
-            {
-              name: "facebook",
-              url: "https://www.facebook.com",
-              icon: "brand-facebook",
-              icon_color: palette.peach,
-            },
-            {
-              name: "reddit",
-              url: "https://www.reddit.com/r/unixporn",
-              icon: "brand-reddit",
-              icon_color: palette.red,
-            },
-          ],
-        },
-        {
-          name: "gaming",
-          links: [
-            {
-              name: "IGN",
-              url: "https://www.ign.com/account/playlist/library",
-              icon: "device-gamepad",
-              icon_color: palette.green,
-            },
-            {
-              name: "steam",
-              url: "https://store.steampowered.com",
-              icon: "brand-steam",
-              icon_color: palette.peach,
-            },
-            {
-              name: "epicgames",
-              url: "https://store.epicgames.com",
-              icon: "brand-fortnite",
-              icon_color: palette.red,
-            },
-            {
-              name: "nintendo",
-              url: "https://store.nintendo.co.uk",
-              icon: "device-nintendo",
-              icon_color: palette.blue,
-            },
-          ],
-        },
-        {
-          name: "video",
-          links: [
-            {
-              name: "anilist",
-              url: "https://anilist.co/home",
-              icon: "brand-funimation",
-              icon_color: palette.green,
-            },
-            {
-              name: "youtube",
-              url: "https://www.youtube.com",
-              icon: "brand-youtube",
-              icon_color: palette.peach,
-            },
-            {
-              name: "patreon",
-              url: "https://www.patreon.com",
-              icon: "brand-patreon",
-              icon_color: palette.red,
-            },
-            {
-              name: "kyivstar",
-              url: "https://tv.kyivstar.ua",
-              icon: "star-filled",
-              icon_color: palette.blue,
-            },
-          ],
-        },
-      ],
-    },
+    }
   ],
 };
 
