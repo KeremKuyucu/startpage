@@ -56,13 +56,13 @@ const default_configuration = {
             {
               name: "ChatGPT",
               url: "https://chat.openai.com",
-              icon: "brain",
+              icon: "brand-chatgpt",
               icon_color: palette.green,
             },
             {
               name: "Duck.ai",
               url: "https://duck.ai",
-              icon: "duck",
+              icon: "brand-duckduckgo",
               icon_color: palette.mauve,
             },
             {
@@ -91,7 +91,7 @@ const default_configuration = {
             {
               name: "notion",
               url: "https://notion.so",
-              icon: "book-open",
+              icon: "brand-notion",
               icon_color: palette.mauve,
             },
           ],
@@ -114,7 +114,7 @@ const default_configuration = {
             {
               name: "Selcukflix",
               url: "https://selcukflix.com",
-              icon: "film",
+              icon: "https://selcukflix.com/assets/favicon/favicon.ico?v=4",
               icon_color: palette.peach,
             },
             {
