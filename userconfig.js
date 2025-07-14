@@ -35,7 +35,7 @@ const default_configuration = {
       gh: ["https://github.com/search?q=", "GitHub"],
       w: ["https://en.wikipedia.org/wiki/Special:Search?search=", "Wikipedia"],
     },
-    default: "d",
+    default: "g",
   },
   keybindings: {
     "s": "search-bar",
