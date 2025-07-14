@@ -15,11 +15,17 @@ class Links extends Component {
    */
   static getIcon(link) {
     const defaultColor = CONFIG.palette.base;
-
-    return link.icon
-      ? `<i class="ti ti-${link.icon} link-icon"
-            style="color: ${link.icon_color ?? defaultColor}"></i>`
-      : "";
+  
+    if (link.icon_url) {
+      return `<img src="${link.icon_url}" class="link-icon" alt="${link.name} icon" />`;
+    }
+  
+    if (link.icon) {
+      return `<i class="ti ti-${link.icon} link-icon"
+            style="color: ${link.icon_color ?? defaultColor}"></i>`;
+    }
+  
+    return "";
   }
 
   /**
