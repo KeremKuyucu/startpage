@@ -10,7 +10,7 @@ let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
 const default_configuration = {
   overrideStorage: true,
   temperature: {
-    location: "London",
+    location: "Bilecik",
     scale: "C",
   },
   clock: {
@@ -19,8 +19,8 @@ const default_configuration = {
   },
   additionalClocks: [
     {
-      label: "UA",
-      timezone: "Europe/Kyiv",
+      label: "TR",
+      timezone: "Europe/İstanbul",
       format: "h:i",
       icon_color: palette.peach,
     },
