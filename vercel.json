@@ -1,8 +1,0 @@
-{
-  "auth": {
-    "protect": {
-      "default": true,
-      "users": ["kkuyucu2254@gmail.com"]
-    }
-  }
-}
