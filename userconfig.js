@@ -56,20 +56,14 @@ const default_configuration = {
             {
               name: "ChatGPT",
               url: "https://chat.openai.com",
-              icon: "brand-chatgpt",
-              icon_color: palette.green,
             },
             {
-              name: "Duck.ai",
-              url: "https://duck.ai",
-              icon: "brand-duckduckgo",
-              icon_color: palette.mauve,
+              name: "Gemini Main",
+              url: "https://gemini.google.com/u/0/app",
             },
             {
-              name: "AI Studio",
-              url: "https://aistudio.google.com",
-              icon: "cpu",
-              icon_color: palette.red,
+              name: "Gemini Pro",
+              url: "https://gemini.google.com/u/1/app",
             },
           ],
         },
@@ -102,14 +96,10 @@ const default_configuration = {
             {
               name: "YouTube",
               url: "https://www.youtube.com",
-              icon: "brand-youtube",
-              icon_color: palette.red,
             },
             {
               name: "Prime Video",
               url: "https://www.primevideo.com",
-              icon: "brand-amazon",
-              icon_color: palette.blue,
             },
             {
               name: "Selcukflix",
@@ -164,14 +154,10 @@ const default_configuration = {
             {
               name: "Google Çeviri",
               url: "https://translate.google.com",
-              icon: "brand-translate",
-              icon_color: palette.blue,
             },
             {
               name: "DeepL",
               url: "https://www.deepl.com/translator",
-              icon: "translate",
-              icon_color: palette.peach,
             },
           ],
         }
