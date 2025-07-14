@@ -43,7 +43,7 @@ const default_configuration = {
   disabled: [],
   localIcons: true,
   localFonts: true,
-  fastlink: "",
+  fastlink: "https://github.com/KeremKuyucu/startpage",
   openLastVisitedTab: true,
   tabs: [
     {
