@@ -1,0 +1,17 @@
+{
+  "projectId": "prj_exQ2QSzeu1tQBRrxjeG6YP8LQt36",
+  "orgId": "team_X1FHwbLpiAgdSxSDJvx9vK4u",
+  "settings": {
+    "auth": {
+      "protect": {
+        "default": true,
+        "groups": [
+          {
+            "name": "Owner Only",
+            "users": ["kkuyucu2254@gmail.com"]
+          }
+        ]
+      }
+    }
+  }
+}
